@@ -1,0 +1,43 @@
+@media only screen and (max-width: 45rem) {
+    .container{
+        grid-template-columns: 30rem;
+        justify-content: center;
+    }
+    .box1,.box2,.box3,.box4,.box5{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .box3{
+        grid-row: 5/6;
+    }
+}
+
+@media only screen and (min-width: 45rem) {
+    .container{
+        grid-template-columns: 20rem 20rem;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and  (min-width: 68rem) {
+    .container{
+        grid-template-columns: 20rem 20rem 20rem;
+    }
+    .box3{
+        grid-row: 3/4;
+        grid-column: span 3;
+    }
+}
+
+@media only screen and (min-width: 90rem) {
+    .container{
+        grid-template-columns: 20rem 20rem 20rem 20rem;
+    }
+
+    .box3{
+        grid-column: 4/5;
+        grid-row: 1/3;
+    }
+
+}
